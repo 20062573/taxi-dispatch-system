@@ -1,0 +1,16 @@
+/* ref-with the help of AI and with w3schools */
+
+.driver-rides {
+    background:#fff; width:450px; padding:40px 30px; border-radius:20px; box-shadow:0 10px 25px rgba(0,0,0,0.25); text-align:center; animation:fadeIn 0.7s ease-in-out;
+  }
+  .driver-rides h2 { color:#1b5e20; margin-bottom:25px; }
+  .driver-rides ul { list-style:none; padding:0; max-height:400px; overflow-y:auto; }
+  .driver-rides li { background:#f7f7f7; border-left:6px solid #32cd32; margin-bottom:12px; padding:15px; border-radius:12px; transition:all 0.3s ease; text-align:left; }
+  .driver-rides li:hover { background:#e8ffe8; transform:scale(1.02); }
+  .driver-rides li p { margin:0 0 10px 0; }
+  .driver-rides li button { padding:8px 12px; border:none; border-radius:10px; font-weight:600; cursor:pointer; margin-right:8px; transition:all 0.3s ease; }
+  .driver-rides li button:first-child { background:#32cd32; color:#fff; }
+  .driver-rides li button:first-child:hover { background:#2e8b57; transform:scale(1.05); }
+  .driver-rides li button:last-child { background:#ff4d4d; color:#fff; }
+  .driver-rides li button:last-child:hover { background:#cc0000; transform:scale(1.05); }
+  
