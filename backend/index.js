@@ -22,9 +22,14 @@ app.use(cors({
 
 
 // Routes
+
+// routes commented for testing
 app.use("/api/auth", authRoutes);
 app.use("/api/rides", rideRoutes);
 app.use("/api/profile", profileRoutes);
 
+app.get("/api/test", (req, res) => {
+  res.send("server is running");
+});
 
 module.exports = app;
