@@ -1,0 +1,17 @@
+/* ref-with the help of AI and with w3schools */
+.ride-request {
+  background: #fff;
+  width: 400px;
+  padding: 40px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  text-align: center;
+  animation: fadeIn 0.7s ease-in-out;
+}
+
+.ride-request h2 { color: #1b5e20; margin-bottom: 25px; }
+.ride-request input { width: 100%; padding:12px; margin:10px 0; border-radius:12px; border:1px solid #ccc; }
+.ride-request button { width: 100%; padding:12px; border-radius:12px; background:#32cd32; color:#fff; border:none; margin-top:15px; cursor:pointer; }
+.ride-request button:hover { background:#2e8b57; transform:scale(1.02); }
+.ride-request p { color:#1b5e20; font-weight:600; margin-top:15px; }
+@keyframes fadeIn { from {opacity:0; transform:translateY(-10px);} to {opacity:1; transform:translateY(0);} }
