@@ -1,0 +1,107 @@
+/* ref-with the help of AI and with w3schools */
+
+body {
+    background: linear-gradient(135deg, #006400, #ffcc00);
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Ride History Container */
+  .ride-history {
+    background: #fff;
+    width: 450px;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.7s ease-in-out;
+    text-align: center;
+  }
+  
+  /* Heading */
+  .ride-history h2 {
+    color: #1b5e20;
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 25px;
+  }
+  
+  /* Ride List */
+  .ride-history ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  /* Ride Item */
+  .ride-history li {
+    background: #f7f7f7;
+    border-left: 6px solid #32cd32; /* green accent */
+    margin-bottom: 12px;
+    padding: 15px;
+    border-radius: 12px;
+    text-align: left;
+    transition: all 0.3s ease;
+  }
+  
+  .ride-history li:hover {
+    background: #e8ffe8;
+    transform: scale(1.02);
+  }
+  
+  /* Ride text */
+  .ride-history li::before {
+    content: "🚕 ";
+  }
+  
+  .ride-history li span {
+    display: block;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  /* Scrollbar Styling */
+  .ride-history ul::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .ride-history ul::-webkit-scrollbar-thumb {
+    background: #32cd32;
+    border-radius: 10px;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 480px) {
+    .ride-history {
+      width: 90%;
+      padding: 30px 20px;
+    }
+  
+    .ride-history h2 {
+      font-size: 22px;
+    }
+  
+    .ride-history li {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+  
