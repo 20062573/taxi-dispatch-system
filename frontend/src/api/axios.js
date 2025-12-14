@@ -2,7 +2,7 @@ import axios from "axios";
 
 // custom axios client for all api calls (ref: w3schools.com)
 const instance = axios.create({
-  baseURL: "https://taxi-dispatch-system.onrender.com/api",
+  baseURL: process.env.REACT_APP_API_URL || "http://localhost:5001/api",
 });
 
 // adds token to every request if logged in
