@@ -4,6 +4,7 @@ const User = require("../models/User.js");
 const { JWT_SECRET } = require("../config.js"); 
 
 const register = async (req, res) => {
+  console.log("REGISTER HIT:", req.body);
   try {
     const { name, email, password, role, phone, vehicleDetails } = req.body;
 
