@@ -15,11 +15,7 @@ app.use(express.json());
 //app.use(cors());
 
 app.use(cors({
-  origin: [
-    "http://localhost:3000",
-    "https://taxi-dispatch-system.onrender.com",
-    "https://*.onrender.com"
-  ],
+  origin: "*", // allow all origins for testing
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
 }));
