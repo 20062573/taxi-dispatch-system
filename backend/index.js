@@ -17,7 +17,8 @@ app.use(express.json());
 app.use(cors({
   origin: [
     "http://localhost:3000",
-    "https://taxi-dispatch-system.onrender.com"
+    "https://taxi-dispatch-system.onrender.com",
+    "https://*.onrender.com"
   ],
   methods: ["GET", "POST", "PUT", "DELETE"],
   allowedHeaders: ["Content-Type", "Authorization"],
