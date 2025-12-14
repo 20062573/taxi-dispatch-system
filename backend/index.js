@@ -12,13 +12,14 @@ const { PORT, MONGO_URI } = require("./config");
 const app = express();
 
 app.use(express.json());
-//app.use(cors());
 
-app.use(cors({
-  origin: "*", // allow all origins for testing
-  methods: ["GET", "POST", "PUT", "DELETE"],
-  allowedHeaders: ["Content-Type", "Authorization"],
-}));
+app.use(cors());
+
+// app.use(cors({
+//   origin: "*", // allow all origins for testing
+//   methods: ["GET", "POST", "PUT", "DELETE"],
+//   allowedHeaders: ["Content-Type", "Authorization"],
+// }));
 
 
 // Routes
